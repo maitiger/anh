@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="File.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:File"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Margin="10,10,10,10">
+             <TextBox x:Name="email11" Header="Email" />
+             <TextBox x:Name="name11" Header="Name" />
+             <TextBox x:Name="phone11" Header="Phone" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Button Content="Save" HorizontalAlignment="Left" Click="SaveClick" />
+            <Button x:Name="load" Content="Load" Click="load_Click" />
+
+        </StackPanel>
+    </Grid>
+</Page>
